@@ -38,6 +38,8 @@ function setImages() {
   if (navLogo && IMAGES['logo-full']) navLogo.src = IMAGES['logo-full'];
   if (footerLogo && IMAGES['logo-full']) footerLogo.src = IMAGES['logo-full'];
   if (ownerImg && IMAGES['owner_emmanuel']) ownerImg.src = IMAGES['owner_emmanuel'];
+  const preloaderLogo = document.getElementById('preloader-logo-img');
+  if (preloaderLogo && IMAGES['logo-full']) preloaderLogo.src = IMAGES['logo-full'];
 
   // Photo gallery
   const photoGallery = document.getElementById('photoGallery');
