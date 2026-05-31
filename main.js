@@ -41,6 +41,22 @@ function setImages() {
   const preloaderLogo = document.getElementById('preloader-logo-img');
   if (preloaderLogo && IMAGES['logo-full']) preloaderLogo.src = IMAGES['logo-full'];
 
+  // Visuals gallery (use action/outdoor shots)
+  const visualsGallery = document.getElementById('visualsGallery');
+  const visualKeys = ['photo_1','photo_3','photo_5','photo_guy_bench_hoodie','photo_guy_indoor_green_hat','photo_couple_blue_outfits'];
+  if (visualsGallery) {
+    visualKeys.forEach(key => {
+      if (IMAGES[key]) {
+        const img = document.createElement('img');
+        img.src = IMAGES[key];
+        img.alt = 'Emie Visuals';
+        img.loading = 'lazy';
+        img.onclick = () => openLightbox(key, visualKeys);
+        visualsGallery.appendChild(img);
+      }
+    });
+  }
+
   // Photo gallery
   const photoGallery = document.getElementById('photoGallery');
   const photoKeys = ['photo_1','photo_3','photo_4','photo_5','photo_couple_blue_outfits','photo_event_mother_baby_blue','photo_girl_red_dress_outdoor','photo_guy_bench_hoodie','photo_guy_indoor_green_hat','photo_woman_baby_car','photo_woman_sofa_sunglasses','photo_woman_traditional_attire'];
