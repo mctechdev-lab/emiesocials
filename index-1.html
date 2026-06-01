@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emie Socials | Creative Powerhouse — Photography, Videography & Digital Strategy</title>
+  <meta name="description" content="Emie Socials is a premium creative agency offering high-impact videography, stunning photography, social media management, and graphic design." />
+  <meta name="keywords" content="Emie Socials, photography, videography, graphic design, social media management, Nigeria" />
+  <meta name="author" content="Emmanuel D. Ntuk" />
+  <meta property="og:title" content="Emie Socials | Creative Powerhouse" />
+  <meta property="og:description" content="High-impact videography, photography, social media management, and graphic design — all under one roof." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- ========== PRELOADER ========== -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <img id="preloader-logo-img" src="" alt="Emie Socials" class="preloader-logo-img" />
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ========== NAVBAR ========== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <img id="nav-logo-img" src="" alt="Emie Socials" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li class="dropdown">
+        <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#visuals"><i class="fas fa-video"></i> Videography</a></li>
+          <li><a href="#photoshoots"><i class="fas fa-camera"></i> Photography</a></li>
+          <li><a href="#smm"><i class="fas fa-mobile-alt"></i> Social Media</a></li>
+          <li><a href="#graphics"><i class="fas fa-palette"></i> Graphic Design</a></li>
+        </ul>
+      </li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#pricing" class="nav-link">Pricing</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+    <a href="#booking" class="btn-book">Book a Session</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge reveal-up">Creative Powerhouse</div>
+    <h1 class="hero-title reveal-up">Elevating Brands Through<br/><span class="gradient-text">Powerful Visuals</span><br/>&amp; Digital Strategy</h1>
+    <p class="hero-sub reveal-up">High-impact videography, stunning photography, data-driven social media management, and premium graphic design — all under one roof.</p>
+    <div class="hero-btns reveal-up">
+      <a href="#services" class="btn-primary">Explore Services <i class="fas fa-arrow-down"></i></a>
+      <a href="#booking" class="btn-outline">Book a Session <i class="fas fa-calendar-check"></i></a>
+    </div>
+    <div class="hero-stats reveal-up">
+      <div class="stat"><span class="stat-num" data-target="120">0</span><span>+</span><p>Projects Done</p></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="85">0</span><span>+</span><p>Happy Clients</p></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-target="4">0</span><span></span><p>Core Services</p></div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-dot"></div>
+    <span>Scroll Down</span>
+  </div>
+</section>
+
+<!-- ========== SERVICES HUB ========== -->
+<section id="services" class="section services-hub">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal-up">What We Do</span>
+      <h2 class="section-title reveal-up">Our Creative Services</h2>
+      <p class="section-sub reveal-up">Everything your brand needs to dominate the digital space — under one creative powerhouse.</p>
+    </div>
+    <div class="services-grid">
+      <a href="#visuals" class="service-card reveal-up">
+        <div class="service-icon"><i class="fas fa-video"></i></div>
+        <div class="service-glow"></div>
+        <h3>Emie Visuals</h3>
+        <p>High-impact cinematic production, promotional reels, and crisp ad content designed to command attention.</p>
+        <span class="service-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      </a>
+      <a href="#photoshoots" class="service-card reveal-up">
+        <div class="service-icon"><i class="fas fa-camera"></i></div>
+        <div class="service-glow"></div>
+        <h3>Emie Photoshoots</h3>
+        <p>Capturing timeless moments, premium portraits, and high-end product photography.</p>
+        <span class="service-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      </a>
+      <a href="#smm" class="service-card reveal-up">
+        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="service-glow"></div>
+        <h3>Emie SMM</h3>
+        <p>Building engaged online communities and driving real business growth with tailored social media strategies.</p>
+        <span class="service-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      </a>
+      <a href="#graphics" class="service-card reveal-up">
+        <div class="service-icon"><i class="fas fa-palette"></i></div>
+        <div class="service-glow"></div>
+        <h3>Emie Designs</h3>
+        <p>Sleek, modern, and sharp commercial designs that make your brand stand out from the competition.</p>
+        <span class="service-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== HOW WE WORK ========== -->
+<section id="process" class="section light-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal-up">Our Process</span>
+      <h2 class="section-title reveal-up">How We Work</h2>
+      <p class="section-sub reveal-up">A simple, transparent process designed to deliver exceptional results every time.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-card reveal-up">
+        <div class="process-num">01</div>
+        <div class="process-icon"><i class="fas fa-paper-plane"></i></div>
+        <h3>Submit Request</h3>
+        <p>Reach out via WhatsApp or our booking form. Tell us about your project, goals, and timeline.</p>
+      </div>
+      <div class="process-connector reveal-up"><i class="fas fa-arrow-right"></i></div>
+      <div class="process-card reveal-up">
+        <div class="process-num">02</div>
+        <div class="process-icon"><i class="fas fa-comments"></i></div>
+        <h3>Strategy Session</h3>
+        <p>We discuss your brand vision, creative direction, and craft a tailored plan that fits your budget.</p>
+      </div>
+      <div class="process-connector reveal-up"><i class="fas fa-arrow-right"></i></div>
+      <div class="process-card reveal-up">
+        <div class="process-num">03</div>
+        <div class="process-icon"><i class="fas fa-magic"></i></div>
+        <h3>Precision Execution</h3>
+        <p>Our team brings your vision to life with cinematic quality, creative precision, and attention to detail.</p>
+      </div>
+      <div class="process-connector reveal-up"><i class="fas fa-arrow-right"></i></div>
+      <div class="process-card reveal-up">
+        <div class="process-num">04</div>
+        <div class="process-icon"><i class="fas fa-rocket"></i></div>
+        <h3>Deliver & Launch</h3>
+        <p>Final assets delivered in your preferred format, ready to publish and make an impact immediately.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EMIE VISUALS ========== -->
+<section id="visuals" class="section service-detail dark-section">
+  <div class="container">
+    <div class="service-detail-header reveal-up">
+      <div class="service-detail-icon video-icon"><i class="fas fa-video"></i></div>
+      <div>
+        <h2>Emie <span class="blue-text">Visuals</span></h2>
+        <p>Videography &amp; Content Creation</p>
+      </div>
+    </div>
+    <div class="service-detail-grid">
+      <div class="service-detail-info reveal-left">
+        <p class="service-tagline">"High-impact cinematic production, promotional reels, and crisp ad content designed to command attention."</p>
+        <ul class="service-list">
+          <li><i class="fas fa-check-circle"></i> Commercial &amp; Brand Promotional Videos</li>
+          <li><i class="fas fa-check-circle"></i> Social Media Reels / TikToks / Shorts</li>
+          <li><i class="fas fa-check-circle"></i> Event Video Coverage &amp; Highlights</li>
+          <li><i class="fas fa-check-circle"></i> Professional Video Editing &amp; Color Grading</li>
+        </ul>
+        <a href="#booking" class="btn-primary">Book Videography <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="photo-gallery reveal-right" id="visualsGallery"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EMIE PHOTOSHOOTS ========== -->
+<section id="photoshoots" class="section service-detail light-section">
+  <div class="container">
+    <div class="service-detail-header reveal-up">
+      <div class="service-detail-icon photo-icon"><i class="fas fa-camera"></i></div>
+      <div>
+        <h2>Emie <span class="blue-text">Photoshoots</span></h2>
+        <p>Photography &amp; Retouching</p>
+      </div>
+    </div>
+    <div class="service-detail-grid reverse">
+      <div class="photo-gallery reveal-left" id="photoGallery"></div>
+      <div class="service-detail-info reveal-right">
+        <p class="service-tagline">"Capturing timeless moments, premium portraits, and high-end product photography."</p>
+        <ul class="service-list">
+          <li><i class="fas fa-check-circle"></i> Corporate &amp; Creative Portrait Sessions</li>
+          <li><i class="fas fa-check-circle"></i> Product &amp; Commercial Photography</li>
+          <li><i class="fas fa-check-circle"></i> Event Coverage &amp; Lifestyle Shoots</li>
+          <li><i class="fas fa-check-circle"></i> High-End Photo Retouching &amp; Editing</li>
+        </ul>
+        <a href="#booking" class="btn-primary">Book Photography <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EMIE SMM ========== -->
+<section id="smm" class="section service-detail dark-section">
+  <div class="container">
+    <div class="service-detail-header reveal-up">
+      <div class="service-detail-icon smm-icon"><i class="fas fa-chart-line"></i></div>
+      <div>
+        <h2>Emie <span class="blue-text">SMM</span></h2>
+        <p>Social Media Management</p>
+      </div>
+    </div>
+    <div class="service-detail-grid">
+      <div class="service-detail-info reveal-left">
+        <p class="service-tagline">"Building engaged online communities and driving real business growth with tailored social media strategies."</p>
+        <ul class="service-list">
+          <li><i class="fas fa-check-circle"></i> Full Page Optimization &amp; Profile Management</li>
+          <li><i class="fas fa-check-circle"></i> Content Strategy, Curation &amp; Caption Writing</li>
+          <li><i class="fas fa-check-circle"></i> Audience Engagement &amp; Community Growth</li>
+          <li><i class="fas fa-check-circle"></i> Social Media Ad Campaign Setup &amp; Budgeting</li>
+        </ul>
+        <a href="#booking" class="btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="smm-metrics reveal-right">
+        <div class="metric-card"><i class="fab fa-instagram"></i><span class="metric-num" data-target="300">0</span><span>%</span><p>Avg Reach Growth</p></div>
+        <div class="metric-card"><i class="fab fa-facebook"></i><span class="metric-num" data-target="5">0</span><span>x</span><p>Engagement Boost</p></div>
+        <div class="metric-card"><i class="fab fa-tiktok"></i><span class="metric-num" data-target="50">0</span><span>k+</span><p>Views Generated</p></div>
+        <div class="metric-card"><i class="fas fa-bullseye"></i><span class="metric-num" data-target="98">0</span><span>%</span><p>Client Satisfaction</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EMIE GRAPHICS ========== -->
+<section id="graphics" class="section service-detail light-section">
+  <div class="container">
+    <div class="service-detail-header reveal-up">
+      <div class="service-detail-icon graphics-icon"><i class="fas fa-palette"></i></div>
+      <div>
+        <h2>Emie <span class="blue-text">Designs</span></h2>
+        <p>Graphic Design &amp; Branding</p>
+      </div>
+    </div>
+    <div class="service-detail-grid reverse">
+      <div class="graphics-gallery reveal-left" id="graphicsGallery"></div>
+      <div class="service-detail-info reveal-right">
+        <p class="service-tagline">"Sleek, modern, and sharp commercial designs that make your brand stand out from the competition."</p>
+        <ul class="service-list">
+          <li><i class="fas fa-check-circle"></i> Premium Event &amp; Promotional Flyers</li>
+          <li><i class="fas fa-check-circle"></i> Custom Logo Design &amp; Brand Identity Kits</li>
+          <li><i class="fas fa-check-circle"></i> Product Packaging &amp; Label Layouts</li>
+          <li><i class="fas fa-check-circle"></i> Digital Content Templates &amp; Corporate Stationery</li>
+        </ul>
+        <a href="#booking" class="btn-primary">Order Design <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PORTFOLIO ========== -->
+<section id="portfolio" class="section dark-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal-up">Our Work</span>
+      <h2 class="section-title reveal-up">Portfolio &amp; Proof of Work</h2>
+      <p class="section-sub reveal-up">Real results for real brands. Every project tells a story of transformation.</p>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid"></div>
+  </div>
+</section>
+
+<!-- ========== PRICING ========== -->
+<section id="pricing" class="section light-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal-up">Transparent Pricing</span>
+      <h2 class="section-title reveal-up">Investment in Your Brand</h2>
+      <p class="section-sub reveal-up">Clear, honest pricing with no hidden fees. Choose what fits your vision.</p>
+    </div>
+
+    <div class="pricing-tabs reveal-up">
+      <button class="price-tab active" data-tab="photo"><i class="fas fa-camera"></i> Photography</button>
+      <button class="price-tab" data-tab="video"><i class="fas fa-video"></i> Videography</button>
+      <button class="price-tab" data-tab="design"><i class="fas fa-palette"></i> Graphics</button>
+      <button class="price-tab" data-tab="smm"><i class="fas fa-chart-line"></i> SMM</button>
+      <button class="price-tab" data-tab="ads"><i class="fas fa-bullhorn"></i> Paid Ads</button>
+    </div>
+
+    <div class="pricing-content">
+      <!-- Photography -->
+      <div class="price-panel active" id="tab-photo">
+        <div class="price-cards">
+          <div class="price-card reveal-up">
+            <div class="price-icon"><i class="fas fa-image"></i></div>
+            <h3>Per Edited Copy</h3>
+            <p class="price-sub">Studio / Outdoor</p>
+            <div class="price-amount">₦<span>2,400</span></div>
+            <p class="price-desc">per picture</p>
+            <ul><li>Professional image retouching</li><li>High-resolution soft copy delivery</li></ul>
+            <a href="#booking" class="btn-price">Book Now</a>
+          </div>
+          <div class="price-card featured reveal-up">
+            <div class="price-badge">Popular</div>
+            <div class="price-icon"><i class="fas fa-birthday-cake"></i></div>
+            <h3>Event Photography</h3>
+            <p class="price-sub">Birthdays / Gigs</p>
+            <div class="price-amount">₦<span>40,000</span></div>
+            <ul><li>On-site event coverage</li><li>Max 50 fully edited copies</li><li>All raw files delivered</li></ul>
+            <a href="#booking" class="btn-price">Book Now</a>
+          </div>
+          <div class="price-card reveal-up">
+            <div class="price-icon"><i class="fas fa-ring"></i></div>
+            <h3>Wedding Photography</h3>
+            <p class="price-sub">Premium Coverage</p>
+            <div class="price-amount">₦<span>120,000</span></div>
+            <ul><li>Premium wedding coverage</li><li>High-end edited digital catalog</li><li>Photobook / frame options</li></ul>
+            <a href="#booking" class="btn-price">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Videography -->
+      <div class="price-panel" id="tab-video">
+        <div class="price-cards">
+          <div class="price-card reveal-up">
+            <div class="price-icon"><i class="fas fa-film"></i></div>
+            <h3>Brand Content</h3>
+            <p class="price-sub">Per Video</p>
+            <div class="price-amount">₦<span>20,000</span></div>
+            <ul><li>Creative short-form video</li><li>Reels / TikToks / Promos</li><li>Trend-focused editing + sound design</li></ul>
+            <a href="#booking" class="btn-price">Book Now</a>
+          </div>
+          <div class="price-card featured reveal-up">
+            <div class="price-badge">Best Value</div>
+            <div class="price-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Content Batch</h3>
+            <p class="price-sub">5 Videos</p>
+            <div class="price-amount">₦<span>80,000</span></div>
+            <ul><li>1 dedicated shooting session</li><li>5 clean promotional videos</li><li>Ready for business marketing</li></ul>
+            <a href="#booking" class="btn-price">Book Now</a>
+          </div>
+          <div class="price-card reveal-up">
+            <div class="price-icon"><i class="fas fa-calendar-alt"></i></div>
+            <h3>Event Coverage</h3>
+            <p class="price-sub">Full Coverage</p>
+            <div class="price-amount">₦<span>56,000</span></div>
+            <ul><li>Full event video coverage</li><li>1 clean highlight / hype reel</li></ul>
+            <a href="#booking" class="btn-price">Book Now</a>
+          </div>
+          <div class="price-card reveal-up">
+            <div class="price-icon"><i class="fas fa-heart"></i></div>
+            <h3>Wedding / Premium</h3>
+            <p class="price-sub">Cinema Quality</p>
+            <div class="price-amount">₦<span>160,000</span></div>
+            <ul><li>Cinema-quality coverage</li><li>Full-length documentary edit</li><li>Cinematic social media teaser</li></ul>
+            <a href="#booking" class="btn-price">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphics -->
+      <div class="price-panel" id="tab-design">
+        <div class="price-cards">
+          <div class="price-card reveal-up">
+            <div class="price-icon"><i class="fas fa-file-image"></i></div>
+            <h3>Single Flyer Design</h3>
+            <div class="price-amount">₦<span>8,000</span></div>
+            <ul><li>Promotional / event flyer</li><li>High-resolution delivery</li><li>2 revision rounds</li></ul>
+            <a href="#booking" class="btn-price">Order Now</a>
+          </div>
+          <div class="price-card featured reveal-up">
+            <div class="price-badge">Popular</div>
+            <div class="price-icon"><i class="fas fa-trademark"></i></div>
+            <h3>Business Logo Design</h3>
+            <div class="price-amount">₦<span>20,000</span></div>
+            <ul><li>Custom logo design</li><li>Multiple concepts</li><li>Vector files included</li></ul>
+            <a href="#booking" class="btn-price">Order Now</a>
+          </div>
+          <div class="price-card reveal-up">
+            <div class="price-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>Full Branding Kit</h3>
+            <p class="price-sub">Corporate Package</p>
+            <div class="price-amount">₦<span>48,000</span></div>
+            <ul><li>Custom Logo</li><li>Business Card layout</li><li>Letterhead</li><li>Basic Brand Guide</li></ul>
+            <a href="#booking" class="btn-price">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SMM -->
+      <div class="price-panel" id="tab-smm">
+        <div class="price-cards">
+          <div class="price-card reveal-up">
+            <div class="price-icon"><i class="fas fa-seedling"></i></div>
+            <h3>Market Visibility</h3>
+            <p class="price-sub">Starter Package</p>
+            <div class="price-amount">₦<span>64,000</span><span class="price-period">/mo</span></div>
+            <ul><li>3 posts weekly</li><li>Strategic caption writing</li><li>Basic page growth</li><li>Daily DM/comment management</li></ul>
+            <a href="#booking" class="btn-price">Get Started</a>
+          </div>
+          <div class="price-card featured reveal-up">
+            <div class="price-badge">Premium</div>
+            <div class="price-icon"><i class="fas fa-crown"></i></div>
+            <h3>Brand Dominance</h3>
+            <p class="price-sub">Growth Package</p>
+            <div class="price-amount">₦<span>120,000</span><span class="price-period">/mo</span></div>
+            <ul><li>5 posts weekly</li><li>Full page overhaul</li><li>Scheduled content creation days</li><li>Weekly performance reports</li></ul>
+            <a href="#booking" class="btn-price">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ads -->
+      <div class="price-panel" id="tab-ads">
+        <div class="price-cards">
+          <div class="price-card featured reveal-up" style="max-width:500px;margin:0 auto;">
+            <div class="price-icon"><i class="fas fa-bullhorn"></i></div>
+            <h3>Ad Campaign Management</h3>
+            <p class="price-sub">Facebook, Instagram &amp; Google</p>
+            <div class="price-amount">₦<span>32,000</span><span class="price-period">/mo</span></div>
+            <ul><li>Target audience research</li><li>Ad copy creation</li><li>Daily campaign tracking</li><li>Campaign optimization</li></ul>
+            <a href="#booking" class="btn-price">Get Started</a>
+          </div>
+        </div>
+        <div class="ads-disclaimer">
+          <i class="fas fa-info-circle"></i>
+          <p><strong>Please Note:</strong> This fee covers management services only. The actual advertising budget spent on campaigns is paid directly to Meta/Google by the client.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking Policy -->
+    <div class="policy-box reveal-up">
+      <h4><i class="fas fa-shield-alt"></i> Booking Policy & Terms</h4>
+      <div class="policy-items">
+        <div class="policy-item"><i class="fas fa-percentage"></i><div><strong>Commitment Fee:</strong> A 50% non-refundable commitment fee is required to secure any date/project. The 50% balance is due immediately upon delivery of the final draft/assets.</div></div>
+        <div class="policy-item"><i class="fas fa-route"></i><div><strong>Logistics:</strong> Logistics outside our immediate operating base attract separate charges based on distance.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="section dark-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal-left">
+        <div class="about-img-frame">
+          <img id="ownerImg" src="" alt="Emmanuel D. Ntuk" />
+          <div class="about-img-badge"><i class="fas fa-award"></i> Founder & Creative Director</div>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <span class="section-tag">About Us</span>
+        <h2>Emmanuel D. <span class="blue-text">Ntuk</span></h2>
+        <p class="about-role">Founder &amp; Creative Director, Emie Socials</p>
+        <div class="about-divider"></div>
+        <h3 class="about-headline">Empowering Brands Through High-Impact Media</h3>
+        <p class="about-bio">At Emie Socials, we help businesses stand out, scale up, and dominate the digital space. We blend striking photography, cinematic videography, strategic social media management, and data-driven paid ads to turn everyday brands into market leaders.</p>
+        <p class="about-mission">"In a world driven by visuals, your brand's digital presence is your most valuable asset. My mission is simple: to capture your unique story, elevate your brand aesthetics, and engineer marketing strategies that convert attention into revenue. Let's build something exceptional together."</p>
+        <div class="about-socials">
+          <a href="https://www.tiktok.com/@emiesocials.os" target="_blank" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/emiesocials1" target="_blank" class="social-btn insta"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/smurlee_" target="_blank" class="social-btn twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/share/1cwk6e3QEg/" target="_blank" class="social-btn fb"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== TESTIMONIALS ========== -->
+<section id="testimonials" class="section light-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal-up">Client Love</span>
+      <h2 class="section-title reveal-up">What Clients Say</h2>
+      <p class="section-sub reveal-up">Real feedback from real brands we've elevated.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal-up">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-text">"Emie Socials completely transformed our brand's online presence. The photography was world-class and our engagement tripled within the first month!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">HM</div>
+          <div>
+            <strong>Hangers Mall</strong>
+            <span>Retail & Lifestyle Brand</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal-up">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-text">"The flyer designs were absolutely stunning. Professional, fast delivery, and exactly what we envisioned. Highly recommend Emie Designs!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MZ</div>
+          <div>
+            <strong>Marvolil Zobo</strong>
+            <span>Food & Beverage Brand</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal-up">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-text">"Working with Emie Socials was a game changer. Their social media strategy turned our dead page into an active sales machine. 10/10!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">HS</div>
+          <div>
+            <strong>Hangers Salon & Spa</strong>
+            <span>Beauty & Wellness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BOOKING ========== -->
+<section id="booking" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal-up">Book a Session</span>
+      <h2 class="section-title reveal-up">Let's Create Something <span class="blue-text">Exceptional</span></h2>
+      <p class="section-sub reveal-up">Select your service, choose your package, and confirm your booking. We'll be in touch instantly via WhatsApp.</p>
+    </div>
+    <div class="booking-form reveal-up">
+      <div class="booking-step" id="step1">
+        <h4><span class="step-num">1</span> Choose Your Service</h4>
+        <div class="booking-options">
+          <button class="book-opt" data-service="Photography"><i class="fas fa-camera"></i> Photography</button>
+          <button class="book-opt" data-service="Videography"><i class="fas fa-video"></i> Videography</button>
+          <button class="book-opt" data-service="Graphic Design"><i class="fas fa-palette"></i> Graphic Design</button>
+          <button class="book-opt" data-service="Social Media Management"><i class="fas fa-chart-line"></i> SMM</button>
+          <button class="book-opt" data-service="Paid Ads Management"><i class="fas fa-bullhorn"></i> Paid Ads</button>
+        </div>
+      </div>
+      <div class="booking-step hidden" id="step2">
+        <h4><span class="step-num">2</span> Select Your Package</h4>
+        <div class="booking-packages" id="packageList"></div>
+      </div>
+      <div class="booking-step hidden" id="step3">
+        <h4><span class="step-num">3</span> Your Details</h4>
+        <div class="booking-fields">
+          <input type="text" id="bookName" placeholder="Your Full Name" />
+          <input type="tel" id="bookPhone" placeholder="Your Phone Number" />
+          <textarea id="bookNote" placeholder="Any additional notes? (Optional)" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="booking-step hidden" id="step4">
+        <h4><span class="step-num">4</span> Review &amp; Policy</h4>
+        <div class="booking-summary" id="bookingSummary"></div>
+        <div class="policy-reminder">
+          <i class="fas fa-info-circle"></i>
+          <p><strong>Reminder:</strong> A 50% non-refundable commitment fee is required to secure your booking. The remaining 50% is due upon delivery of final assets. Logistics outside our base attract extra charges.</p>
+        </div>
+        <label class="policy-check"><input type="checkbox" id="policyAgree" /> I have read and agree to the booking policy</label>
+      </div>
+      <div class="booking-nav">
+        <button class="btn-outline" id="btnBack" style="display:none" onclick="bookingBack()">← Back</button>
+        <button class="btn-primary" id="btnNext" onclick="bookingNext()">Next Step →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="section dark-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal-up">Get In Touch</span>
+      <h2 class="section-title reveal-up">Contact <span class="blue-text">Emie Socials</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal-up">
+        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+        <h4>WhatsApp</h4>
+        <p>+234 904 908 6446</p>
+        <a href="https://wa.me/2349049086446" target="_blank" class="btn-contact">Chat Now</a>
+      </div>
+      <div class="contact-card reveal-up">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <h4>Email</h4>
+        <p>Leohendrick01@gmail.com</p>
+        <a href="mailto:Leohendrick01@gmail.com" class="btn-contact">Send Mail</a>
+      </div>
+      <div class="contact-card reveal-up">
+        <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+        <h4>Instagram</h4>
+        <p>@emiesocials1</p>
+        <a href="https://www.instagram.com/emiesocials1" target="_blank" class="btn-contact">Follow Us</a>
+      </div>
+      <div class="contact-card reveal-up">
+        <div class="contact-icon"><i class="fab fa-tiktok"></i></div>
+        <h4>TikTok</h4>
+        <p>@emiesocials.os</p>
+        <a href="https://www.tiktok.com/@emiesocials.os" target="_blank" class="btn-contact">Watch Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img id="footerLogo" src="" alt="Emie Socials" class="footer-logo" />
+        <p>Your creative powerhouse for visuals, content, and digital strategy. Elevating brands, one story at a time.</p>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@emiesocials.os" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/emiesocials1" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/smurlee_" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/share/1cwk6e3QEg/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/2349049086446" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#visuals">Emie Visuals</a></li>
+          <li><a href="#photoshoots">Emie Photoshoots</a></li>
+          <li><a href="#smm">Emie SMM</a></li>
+          <li><a href="#graphics">Emie Designs</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#booking">Book a Session</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <p><i class="fab fa-whatsapp"></i> +234 904 908 6446</p>
+        <p><i class="fas fa-envelope"></i> Leohendrick01@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Emie Socials. All rights reserved.</p>
+      <p>Designed &amp; Built by Emmanuel D. Ntuk</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== MC TECH AD BANNER ========== -->
+<div class="mctech-banner">
+  <div class="mctech-inner">
+    <span class="mctech-tag">🚀 Built by MC Tech</span>
+    <span class="mctech-text">Get your own <strong>premium website</strong> at an affordable price!</span>
+    <a href="mailto:mctechglobal2010@gmail.com" class="mctech-btn">Contact Us <i class="fas fa-arrow-right"></i></a>
+  </div>
+</div>
+
+<!-- ========== LIGHTBOX ========== -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <button class="lightbox-prev" onclick="lightboxPrev()"><i class="fas fa-chevron-left"></i></button>
+  <button class="lightbox-next" onclick="lightboxNext()"><i class="fas fa-chevron-right"></i></button>
+  <div class="lightbox-img-wrap"><img id="lightboxImg" src="" alt="" /></div>
+</div>
+
+
+<!-- ========== WHATSAPP FLOAT ========== -->
+<a href="https://wa.me/2349049086446" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Scripts -->
+<script src="images.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

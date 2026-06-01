@@ -372,3 +372,91 @@ document.addEventListener('DOMContentLoaded', () => {
   createParticles();
   observeAll();
 });
+
+// ===== DARK MODE TOGGLE =====
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+let isDark = localStorage.getItem('theme') === 'dark';
+
+function applyTheme() {
+  document.body.classList.toggle('dark', isDark);
+  themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+}
+applyTheme();
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    isDark = !isDark;
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    applyTheme();
+  });
+}
+
+// ===== ENHANCED SCROLL REVEAL (staggered, physics-based) =====
+const enhancedObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Stagger children if it's a grid container
+      const children = entry.target.querySelectorAll(
+        '.service-card, .price-card, .process-card, .testimonial-card, .contact-card, .pow-card, .portfolio-item'
+      );
+      if (children.length > 0) {
+        children.forEach((child, i) => {
+          child.style.transitionDelay = `${i * 0.1}s`;
+          setTimeout(() => {
+            child.classList.add('visible');
+          }, i * 80);
+        });
+      }
+      enhancedObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.05, rootMargin: '0px 0px -60px 0px' });
+
+// Observe grid containers for stagger
+document.querySelectorAll('.services-grid, .price-cards, .process-grid, .testimonials-grid, .contact-grid, .portfolio-grid, .pow-grid').forEach(el => {
+  enhancedObserver.observe(el);
+});
+
+// ===== NAVBAR ACTIVE LINK HIGHLIGHT ON SCROLL =====
+const sections = document.querySelectorAll('section[id]');
+const navLinks2 = document.querySelectorAll('.nav-link');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const top = section.offsetTop - 120;
+    if (window.scrollY >= top) current = section.getAttribute('id');
+  });
+  navLinks2.forEach(link => {
+    link.classList.remove('active-link');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active-link');
+    }
+  });
+}, { passive: true });
+
+// ===== SMOOTH CARD TILT EFFECT (subtle 3D on mouse move) =====
+document.querySelectorAll('.service-card, .process-card, .testimonial-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = (y - centerY) / 20;
+    const rotateY = (centerX - x) / 20;
+    card.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+// ===== SMOOTH PAGE ENTRY ANIMATION =====
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.style.opacity = '0';
+  document.body.style.transition = 'opacity 0.5s ease';
+  setTimeout(() => {
+    document.body.style.opacity = '1';
+  }, 100);
+});
